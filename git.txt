@@ -1,0 +1,60 @@
+git config --global user.name newtan : set username
+git config --global user.email x@gmail.com : set email
+git config --global user.name : will show u the username
+git config --global user.email : show u email
+
+
+git init : will initialize the repo in desktop which u r currently in
+ls -lart : will show hidden folders as well
+git status : will show u the untracked file
+
+git add filename : take it to staging area
+git add */git add -A : stage all the files.
+git checkout contact.html : will replace the newly edited contact.html one with the last committed contact.html one.
+git checkout -f : will match all files in this repo with the last commited ones.
+git log : show the list of the last commits.
+git log -2 : show the last 2 commits.
+git log -p -2 : last 2 commits with diff.
+git diff : will compare the working area to statgin area(the git add things.)
+git diff --staged : will compare the stagig area to the last commit.
+git commit -a -m "fds" : will directly commit after stahing automatically. no need to stage and then commit separately.
+git rm s.txt : will remove the file from hard disk as well as the staging area (NOTE: Use -f by force).
+	so, by using rm it will automatically get deleted from staging as well as this local directory.
+git rm --cached : only delete from the staging area. file will still remian in the hard disk. (NOTE: but will remain untracked)
+
+git status -s : the first green M will shwo that like what files have been modified in the staging area
+		the second red M will show that what files have been modified in the local directory area.
+
+touch .gitignore : many files which we dont want to track.
+		just write the names of the files which u dont want to track/add to server. so just write those names of the files here.
+		even if that file is inside some directlyr and not necessarily on the root iutself, still it would get ignoed.
+
+		also if u write *.log , this will ignore all the log files.
+
+		to ignore a folder named name, write name/ in the gitignore file
+
+
+git branch features/git checkout -b features: create a new branch named features.
+		NOTE : checkout -b will create and will automatically shift there as well
+			git branch will only the branch.
+
+git branch : will show u the list of all the branches
+
+
+git checkout branch_name : will switch to this branch called branh_name.  (NOTE: git checkout is also used to pull the current files from the commit to this local diretory)
+
+git merge branch_name : will merge the branch_name with the branch in which you are currently in.
+
+git remote add origin repo_url : will connect this local repo to this remote repository link.
+
+	git remote : will print origin
+	git remote -v : will print repo_url
+
+git push -u origin master : will say that like, add this master branch to this origin.
+
+
+		git checkout branch_name : 
+		git push -u origin branch_name :
+
+
+
